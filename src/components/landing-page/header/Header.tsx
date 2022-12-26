@@ -8,7 +8,7 @@ const Header: React.FC<{}> = () => {
         <div>
             <Background />
             <Navbar />
-            <Hero />
+            {/* <Hero /> */}
         </div>
     )
 }

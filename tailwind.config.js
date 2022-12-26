@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Grotesk: ["Space Grotesk", "sans-serif"],
+        UI: ["Segoe UI, sans-serif"],
       },
     },
   },

@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/images/background.png"
+import backgroundImage from "../assets/images/background.png";
 
 const Background: React.FC<{}> = () => {
     return (
