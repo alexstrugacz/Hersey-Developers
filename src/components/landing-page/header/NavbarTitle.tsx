@@ -39,7 +39,7 @@ const NavbarTitle: React.FC<{}> = () => {
                             Projects
                         </a>
                         <a
-                            href={"/"}
+                            href={"https://discord.gg/ZfdyycD4y4"}
                             className={
                                 `flex text-white ml-2 mr-16 text-xl font-Grotesk font-bold hover:font-extrabold transition-all`
                             }
