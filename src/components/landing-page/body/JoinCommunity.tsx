@@ -18,9 +18,7 @@ const JoinCommunity: React.FC<{}> = () => {
                             endColor={"to-cyan-800"} />
                     </div>
                 </div>
-
             </div>
-
         </div>
 
     )

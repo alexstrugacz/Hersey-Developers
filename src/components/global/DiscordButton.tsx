@@ -30,7 +30,7 @@ const DiscordButton: React.FC<{
 
             <p
                 className={
-                    "flex text-md text-white font-UI font-bold"
+                    "flex text-lg text-white font-UI font-bold"
                 }
             >
                 {props.text}{DiscordLogo}

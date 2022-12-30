@@ -4,7 +4,7 @@ import DiscordButton from "../../global/DiscordButton";
 
 const Footer: React.FC<{}> = () => {
     return (
-        <div className=" bg-neutral-400">
+        <div className=" bg-neutral-300">
             <div className="flex align-center h-[610px] justify-start overflow-hidden">
                 <img className="absolute w-full overflow-hidden h-[610px]" src={BackgroundImage}></img>
                 <h1 className="absolute overflow-hidden text-white font-Grotesk text-5xl font-bold text-left mt-40 ml-16">Join Hersey Developers Today</h1>
@@ -27,7 +27,7 @@ const Footer: React.FC<{}> = () => {
                         <a className="block" href="/">Homepage</a>
                         <a className="block" href="/">Resources</a>
                         <a className="block" href="/">Projects</a>
-                        <a className="block" href="/">Discord</a>
+                        <a className="block" href="https://discord.gg/ZfdyycD4y4">Discord</a>
                     </div>
                 </div>
                 <div className="ml-32">

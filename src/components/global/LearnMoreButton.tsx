@@ -1,9 +1,8 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
-import Arrow from "../../assets/Arrow";
 
 
-const ProjectsButton: React.FC<{
+const LearnMoreButton: React.FC<{
     link: string;
     text: string;
     startColor: string;
@@ -25,19 +24,19 @@ const ProjectsButton: React.FC<{
         <button
             onClick={handleClick}
             className={
-                `bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all`
+                `bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all border-white border-[1px] ml-4`
             }
         >
 
             <p
                 className={
-                    "flex text-md text-white font-UI font-bold"
+                    "flex text-lg text-white font-UI font-bold"
                 }
             >
-                {props.text} {Arrow}
+                {props.text}
             </p>
 
         </button>
     );
 }
-export default ProjectsButton;
+export default LearnMoreButton;

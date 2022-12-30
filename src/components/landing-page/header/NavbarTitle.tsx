@@ -1,8 +1,10 @@
 import React from 'react';
+import DiscordButton from '../../global/DiscordButton';
+import LearnMoreButton from '../../global/LearnMoreButton';
 
-const Navbar: React.FC<{}> = () => {
+const NavbarTitle: React.FC<{}> = () => {
     return (
-        <div className={"flex mr-8 md:mt-0"}>
+        <div>
             <div className={`fixed top-0 flex flex-col md:flex-row z-20 p-5 w-full`}>
                 <div className='flex justify-between flex-row items-center w-full'>
                     <div className='flex items-center'>
@@ -47,9 +49,24 @@ const Navbar: React.FC<{}> = () => {
                     </div>
                 </div>
             </div>
+            <div className='absolute top-0 ml-16 mt-56'>
+                <h1 className='text-white font-Grotesk text-6xl font-extrabold text-left mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
+                <p className='text-white font-Grotesk text-xl text-left w-3/5 mt-8'>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
+                <div className='flex mt-16 gap-2'>
+                    <DiscordButton
+                        link={'https://discord.gg/ZfdyycD4y4'}
+                        text={"Join the Discord"}
+                        startColor={"from-cyan-400"}
+                        endColor={"to-cyan-800"} />
+                    <LearnMoreButton
+                        link={'/'}
+                        text={"Learn More"}
+                        startColor={"from-black-400"}
+                        endColor={"to-black-400"} />
+                </div>
+            </div>
         </div>
-
     );
 };
 
-export default Navbar;
+export default NavbarTitle;
