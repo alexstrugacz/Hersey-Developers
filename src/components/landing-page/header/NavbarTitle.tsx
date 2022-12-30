@@ -70,7 +70,7 @@ const NavbarTitle: React.FC<{
                             Hersey Developers
                         </a>
                     </div>
-                    <div className='flex '>
+                    <div className='flex'>
                         <a
                             href={"/"}
                             className={
@@ -80,7 +80,7 @@ const NavbarTitle: React.FC<{
                             Resources
                         </a>
                         <a
-                            href={"/"}
+                            href={"/projects"}
                             className={
                                 `flex ml-4 mr-4 text-xl text-white font-light self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
