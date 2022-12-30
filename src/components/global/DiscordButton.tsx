@@ -13,11 +13,8 @@ const DiscordButton: React.FC<{
     const navigate = useNavigate();
 
     const handleClick = () => {
-        if (props.fullRedirect) {
-            window.open(props.link, "_blank");
-        } else {
-            navigate(props.link)
-        }
+        window.open(props.link, "_blank");
+
     }
 
     return (
