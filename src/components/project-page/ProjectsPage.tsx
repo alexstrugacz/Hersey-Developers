@@ -12,7 +12,7 @@ const ProjectsPage: React.FC<{}> = () => {
             <h1 className='flex text-white text-5xl font-Grotesk font-bold ml-10 mt-[4vh]'>Projects</h1>
             <div>
                 <div className={"mt-5"}>
-                    <div className="m-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <div className="m-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4">
                         {Projects.map((project) => {
                             return (
                                 <div>
