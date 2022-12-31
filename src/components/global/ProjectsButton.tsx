@@ -14,11 +14,8 @@ const ProjectsButton: React.FC<{
     const navigate = useNavigate();
 
     const handleClick = () => {
-        if (props.fullRedirect) {
-            window.open(props.link, "_blank");
-        } else {
-            navigate(props.link)
-        }
+
+        navigate(props.link)
     }
 
     return (
@@ -31,7 +28,7 @@ const ProjectsButton: React.FC<{
 
             <p
                 className={
-                    "flex text-md text-white font-UI font-bold"
+                    "flex text-lg text-white font-UI font-bold"
                 }
             >
                 {props.text} {Arrow}

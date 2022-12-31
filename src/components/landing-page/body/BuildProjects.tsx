@@ -11,7 +11,7 @@ const BuildProjects: React.FC<{}> = () => {
                     <p className="mt-8 font-UI text-lg font-light text-left text-zinc-600">The next part of the internship is building projects. Groups of 4-6, called “pods”, alongside a Hersey Developers Leader build projects requested by staff in D214 or local businesses.</p>
                     <div className="flex mt-8">
                         <ProjectsButton
-                            link={'https://discord.gg/ZfdyycD4y4'}
+                            link={'/projects'}
                             text={"See our projects"}
                             startColor={"from-orange-400"}
                             endColor={"to-orange-800"} />

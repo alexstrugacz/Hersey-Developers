@@ -25,8 +25,8 @@ const Footer: React.FC<{}> = () => {
                     </svg>Hersey Developers</h3>
                     <div className="font-UI font-light text-xl text-neutral-700 text-left ml-[3.7vh]">
                         <a className="block hover:font-bold" href="/">Homepage</a>
-                        <a className="block hover:font-bold" href="/">Resources</a>
-                        <a className="block hover:font-bold" href="/">Projects</a>
+                        <a className="block hover:font-bold" href="/resources">Resources</a>
+                        <a className="block hover:font-bold" href="/projects">Projects</a>
                         <a className="block hover:font-bold" href="https://discord.gg/ZfdyycD4y4">Discord</a>
                     </div>
                 </div>
