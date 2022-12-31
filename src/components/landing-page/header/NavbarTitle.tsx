@@ -72,7 +72,7 @@ const NavbarTitle: React.FC<{
                     </div>
                     <div className='flex'>
                         <a
-                            href={"/"}
+                            href={"/resources"}
                             className={
                                 `flex ml-2 mr-4 text-xl font-light text-white self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }

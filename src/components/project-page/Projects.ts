@@ -6,19 +6,18 @@ export const Projects: {
   status: string;
 }[] = [
   {
-    imagelink:
-      "https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-network-placeholder-png-image_3416659.jpg",
+    imagelink: "./assets/images/placeholder.png",
     name: "D214 Schedule App",
     description:
-      "Start with a basic template & then build a custom personal website!",
+      "iOS App to help all D214 students find their schedule and classes",
     link: "https://workshops.hackclub.com/personal_website/",
     status: "🏗️ In development",
   },
   {
-    imagelink: `https://png.pngtree.com/png-vector/20210604/ourmid/pngtree-gray-network-placeholder-png-image_3416659.jpg`,
-    name: "Stuff Finder",
+    imagelink: "./assets/images/placeholder.png",
+    name: "JHHS Club Finder",
     description:
-      "Start with a template then build a website to find stuff! Ice cream, stocks, pokemon -- you name it!",
+      "Modern web app club search/filter for John Hersey High School",
     link: "https://workshops.hackclub.com/stuff_finder/",
     status: "🏗️ In development",
   },
