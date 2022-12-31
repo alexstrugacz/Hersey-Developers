@@ -8,7 +8,7 @@ const Footer: React.FC<{}> = () => {
             <div className="flex align-center h-[610px] justify-start overflow-hidden">
                 <img className="absolute w-full overflow-hidden h-[610px]" src={BackgroundImage}></img>
                 <h1 className="absolute overflow-hidden text-white font-Grotesk text-5xl font-bold text-left mt-40 ml-16">Join Hersey Developers Today</h1>
-                <p className="absolute z-40 w-1/2 height-[1/6] overflow-hidden text-white font-Grotesk text-2xl font-light text-left mt-64 ml-16">Join the Discord server to meet Hersey Developers and gain key announcements!</p>
+                <p className="hidden md:block absolute z-40 w-1/2 height-[1/6] overflow-hidden text-white font-Grotesk text-2xl font-light text-left mt-64 ml-16">Join the Discord server to meet Hersey Developers and gain key announcements!</p>
                 <div className="absolute mt-96 ml-16">
                     <DiscordButton
                         link={'https://discord.gg/ZfdyycD4y4'}

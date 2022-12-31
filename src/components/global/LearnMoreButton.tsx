@@ -18,7 +18,7 @@ const LearnMoreButton: React.FC<{
     }
 
     return (
-        <div>
+        <div className="hidden md:block">
             <button
                 onClick={handleClick}
                 className={

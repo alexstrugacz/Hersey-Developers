@@ -22,9 +22,9 @@ const NavbarTitle: React.FC<{
 
     return (
         <div>
-            <div className='absolute z-40 ml-24 top-0 mt-[30vh]'>
-                <h1 className='text-white min-w-full font-Grotesk text-6xl font-extrabold text-left mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
-                <p className='text-white font-Grotesk text-xl text-left w-3/5 mt-8'>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
+            <div className='absolute z-40 ml-16 top-0 mt-[30vh]'>
+                <h1 className='text-center text-white md:text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
+                <p className=' hidden md:block text-white font-Grotesk text-xl text-left w-3/5 mt-8 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
                 <div className='flex mt-16 gap-2'>
                     <DiscordButton
                         link={'https://discord.gg/ZfdyycD4y4'}
