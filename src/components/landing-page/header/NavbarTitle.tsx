@@ -42,7 +42,7 @@ const NavbarTitle: React.FC<{
                 <div className='flex justify-between flex-col md:flex-row items-center w-full'>
                     <div className='flex items-center'>
 
-                        <svg className={` ${(!props.transparent ? "hidden" : "")} mr-2 md:block `} xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
+                        <svg className={` ${(!props.transparent ? "hidden" : "")} mr-2 md:block md:ml-4 `} xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
                             <g filter="url(#filter0_d_106_2)">
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} />
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} fill-opacity="0.9" />
@@ -62,7 +62,7 @@ const NavbarTitle: React.FC<{
                                 </filter>
                             </defs>
                         </svg>
-                        <h1 className={`text-white font-Grotesk text-md'>Hersey Developers ${(!props.transparent ? "hidden" : "md:hidden")}`}>Hersey Developers</h1>
+                        <h1 className={`text-white font-Grotesk text-md ${(!props.transparent ? "hidden" : "md:hidden")}`}>Hersey Developers</h1>
                         <div className={"md:hidden"}>
                             {/* {
                                 opened ? (
