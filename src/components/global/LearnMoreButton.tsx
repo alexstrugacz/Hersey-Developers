@@ -18,11 +18,11 @@ const LearnMoreButton: React.FC<{
     }
 
     return (
-        <div className="hidden md:block">
+        <div className="mt-4 md:mt-0">
             <button
                 onClick={handleClick}
                 className={
-                    `bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all border-white border-[1px] ml-4`
+                    `bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all border-white border-[1px] md:ml-4`
                 }
             >
 
@@ -35,7 +35,7 @@ const LearnMoreButton: React.FC<{
                 </p>
 
             </button>
-            <div className="absolute mt-48">
+            <div className="absolute md:mt-48 mt-12">
                 <div ref={ref}></div>
             </div>
         </div>

@@ -7,7 +7,7 @@ const Background: React.FC<{}> = () => {
             <img
                 src={backgroundImage}
                 alt='background of written code'
-                className={"absolute min-w-full min-h-full max-h-none max-w-none z-2"}
+                className={"absolute min-w-full min-h-full max-h-none max-w-none z-2 "}
             ></img>
         </div>
     )

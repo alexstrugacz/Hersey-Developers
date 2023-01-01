@@ -22,10 +22,10 @@ const NavbarTitle: React.FC<{
 
     return (
         <div>
-            <div className='absolute z-40 ml-16 top-0 mt-[30vh]'>
-                <h1 className='text-center text-white md:text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
-                <p className=' hidden md:block text-white font-Grotesk text-xl text-left w-3/5 mt-8 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
-                <div className='flex mt-16 gap-2'>
+            <div className='absolute z-40 md:ml-16 ml-10 top-0 mt-[17vh] md:mt-[30vh]'>
+                <h1 className=' text-white text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
+                <p className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-8 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
+                <div className='mt-8 text-left md:flex md:mt-16 md:gap-2'>
                     <DiscordButton
                         link={'https://discord.gg/ZfdyycD4y4'}
                         text={"Join the Discord"}
@@ -38,10 +38,11 @@ const NavbarTitle: React.FC<{
                         endColor={"to-black-400"} />
                 </div>
             </div>
-            <div className={`fixed top-0 flex flex-col md:flex-row z-50 p-5 w-full ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : ""}`}>
-                <div className='flex justify-between flex-row items-center w-full'>
+            <div className={`fixed top-0 flex flex-col md:flex-row z-50 p-4 md:p-5 w-full ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : ""}`}>
+                <div className='flex justify-between flex-col md:flex-row items-center w-full'>
                     <div className='flex items-center'>
-                        <svg className='ml-4' xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
+
+                        <svg className={` ${(!props.transparent ? "hidden" : "")} mr-2 md:block `} xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
                             <g filter="url(#filter0_d_106_2)">
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} />
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} fill-opacity="0.9" />
@@ -61,10 +62,20 @@ const NavbarTitle: React.FC<{
                                 </filter>
                             </defs>
                         </svg>
+                        <h1 className={`text-white font-Grotesk text-md'>Hersey Developers ${(!props.transparent ? "hidden" : "md:hidden")}`}>Hersey Developers</h1>
+                        <div className={"md:hidden"}>
+                            {/* {
+                                opened ? (
+                                    <XMarkIcon onClick={handleClose} className={`w-7 text-zinc-400 hover:${(props.transparent && !opened) ? "text-white" : "text-black"} transition-all hover:cursor-pointer`} />
+                                ) : (
+                                    <Bars3Icon onClick={handleOpen} className={`w-7 text-zinc-400 hover:${(props.transparent && !opened) ? "text-white" : "text-black"} transition-all hover:cursor-pointer`} />
+                                )
+                            } */}
+                        </div>
                         <a
                             href={"/"}
                             className={
-                                `ml-2 mr-12 text-xl font-bold ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `hidden md:block ml-2 text-xl font-bold ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Hersey Developers
@@ -74,7 +85,7 @@ const NavbarTitle: React.FC<{
                         <a
                             href={"/resources"}
                             className={
-                                `flex ml-2 mr-4 text-xl font-light text-white self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `flex ml-2 mr-3 md:mr-4 text-xl font-light text-white self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Resources
@@ -82,7 +93,7 @@ const NavbarTitle: React.FC<{
                         <a
                             href={"/projects"}
                             className={
-                                `flex ml-4 mr-4 text-xl text-white font-light self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `flex ml-4 mr-5 md:mr-4 text-xl text-white font-light self-center font-Grotesk hover:font-bold transition-all ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Projects
@@ -90,10 +101,18 @@ const NavbarTitle: React.FC<{
                         <a
                             href={"https://discord.gg/ZfdyycD4y4"}
                             className={
-                                `flex text-white ml-2 mr-16 text-xl font-bold font-Grotesk rounded-xl p-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-100 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `hidden md:block text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-100 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Join Today
+                        </a>
+                        <a
+                            href={"https://discord.gg/ZfdyycD4y4"}
+                            className={
+                                `md:hidden flex text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-100 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                            }
+                        >
+                            Join
                         </a>
                     </div>
                 </div>
