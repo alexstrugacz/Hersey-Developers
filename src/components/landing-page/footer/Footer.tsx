@@ -5,16 +5,18 @@ import DiscordButton from "../../global/DiscordButton";
 const Footer: React.FC<{}> = () => {
     return (
         <div className=" bg-neutral-300">
-            <div className="flex align-center h-[610px] justify-start overflow-hidden">
-                <img className="absolute w-full overflow-hidden h-[610px]" src={BackgroundImage}></img>
-                <h1 className="absolute overflow-hidden text-white font-Grotesk text-5xl font-bold text-left mt-14 leading-tight md:leading-0 ml-16">Join Hersey Developers Today</h1>
-                <p className="md:block absolute z-40 md:w-1/2 w-3/5 height-[1/6] overflow-hidden text-white font-Grotesk text-2xl font-light text-left mt-[33vh] md:mt-[25vh] ml-16">Join the Discord server to meet Hersey Developers and gain key announcements!</p>
-                <div className="absolute mt-[56vh] md:mt-[39vh] ml-16">
-                    <DiscordButton
-                        link={'https://discord.gg/ZfdyycD4y4'}
-                        text={"Join the Discord"}
-                        startColor={"from-cyan-400"}
-                        endColor={"to-cyan-800"} />
+            <div className="flex align-center h-screen justify-start overflow-hidden">
+                <img className="absolute object-cover w-full overflow-hidden h-screen" src={BackgroundImage}></img>
+                <div className="mt-32">
+                    <h1 className="absolute overflow-hidden text-white font-Grotesk text-5xl font-bold text-left mt-14 leading-tight md:leading-0 ml-16">Join Hersey Developers Today</h1>
+                    <p className="md:block absolute z-40 md:w-1/2 w-3/5 height-[1/6] overflow-hidden text-white font-Grotesk text-2xl font-light text-left mt-[34vh] md:mt-[20vh] ml-16">Join the Discord server to meet Hersey Developers and gain key announcements!</p>
+                    <div className="absolute mt-[56vh] md:mt-[36vh] ml-16">
+                        <DiscordButton
+                            link={'https://discord.gg/ZfdyycD4y4'}
+                            text={"Join the Discord"}
+                            startColor={"from-cyan-400"}
+                            endColor={"to-cyan-800"} />
+                    </div>
                 </div>
             </div>
             <div className="flex h-[330px] md:h-[290px]">

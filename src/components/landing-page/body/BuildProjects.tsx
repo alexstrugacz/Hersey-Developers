@@ -17,7 +17,7 @@ const BuildProjects: React.FC<{}> = () => {
                             endColor={"to-orange-800"} />
                     </div>
                 </div>
-                <img className="hidden md:block w-1/2 m-12 " alt="Students building projects" src={buildprojects}></img>
+                <img className="hidden md:block object-contain w-1/2 m-12 " alt="Students building projects" src={buildprojects}></img>
 
             </div>
             <div className="px-36 w-full h-[1px] bg-zinc-300 overflow-hidden"></div>
