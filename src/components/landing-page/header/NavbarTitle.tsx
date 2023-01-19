@@ -38,7 +38,7 @@ const NavbarTitle: React.FC<{
                         endColor={"to-black-400"} />
 
                 </div>
-                <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-violet-400 font-bold'>
+                <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-offset-4 ring-violet-400 ring-offset-black font-bold'>
                     Kick-Off Form
                 </a>
             </div>
