@@ -21,7 +21,7 @@ const DiscordButton: React.FC<{
         <button
             onClick={handleClick}
             className={
-                `bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all`
+                ` bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all`
             }
         >
 

@@ -36,7 +36,11 @@ const NavbarTitle: React.FC<{
                         text={"Learn More"}
                         startColor={"from-black-400"}
                         endColor={"to-black-400"} />
+
                 </div>
+                <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-violet-400 font-bold'>
+                    Kick-Off Form
+                </a>
             </div>
             <div className={`fixed top-0 flex flex-col md:flex-row z-50 p-4 md:p-5 w-full ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : ""}`}>
                 <div className='flex justify-between flex-col md:flex-row items-center w-full'>
