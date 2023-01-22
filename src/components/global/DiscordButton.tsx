@@ -14,7 +14,6 @@ const DiscordButton: React.FC<{
 
     const handleClick = () => {
         window.open(props.link, "_blank");
-
     }
 
     return (

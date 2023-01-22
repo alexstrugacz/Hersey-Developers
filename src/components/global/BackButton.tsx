@@ -5,6 +5,7 @@ import BackwardsArrow from "../../assets/BackwardsArrow";
 
 const BackButton: React.FC<{
     link: string;
+    leftPad?: boolean;
 }> = (props) => {
 
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ const BackButton: React.FC<{
         <button
             onClick={handleClick}
             className={
-                `px-8 w-fit hover:cursor-pointer hover:scale-105 transition-all`
+                `${props.link ? "8px" : ""} w-fit hover:cursor-pointer hover:scale-105 transition-all`
             }
         >
             {BackwardsArrow}
