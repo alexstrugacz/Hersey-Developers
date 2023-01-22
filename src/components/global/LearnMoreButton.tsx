@@ -14,7 +14,9 @@ const LearnMoreButton: React.FC<{
 
     const ref = useRef<HTMLDivElement>(null);
     const handleClick = () => {
-        ref.current?.scrollIntoView({ behavior: "smooth" });
+        if (props.link === "/") {
+            ref.current?.scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     return (

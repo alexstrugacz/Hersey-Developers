@@ -22,31 +22,51 @@ const NavbarTitle: React.FC<{
 
     return (
         <div>
-            <div className='absolute z-40 md:ml-16 ml-10 top-0 mt-[17vh] md:mt-[30vh]'>
-                <h1 className=' text-white text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
-                <p className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-8 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
-                <div className='mt-8 text-left md:flex md:mt-16 md:gap-2'>
-                    <DiscordButton
-                        link={'https://discord.gg/ZfdyycD4y4'}
-                        text={"Join the Discord"}
-                        startColor={"from-cyan-400"}
-                        endColor={"to-cyan-800"} />
-                    <LearnMoreButton
-                        link={'/'}
-                        text={"Learn More"}
-                        startColor={"from-black-400"}
-                        endColor={"to-black-400"} />
+            <div className='flex flex-col justify-center items-center absolute z-40 top-0 w-full h-screen'>
+                <div className={"max-w-6xl p-10"}>
+                    <h1 className=' text-white text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
+                    <p className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-6 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
+                    <div className='mt-8 text-left md:flex md:mt-16 gap-4'>
+                        <DiscordButton
+                            link={'https://discord.gg/ZfdyycD4y4'}
+                            text={"Join the Discord"}
+                            startColor={"from-cyan-400"}
+                            endColor={"to-cyan-800"} />
 
+                        <a
+                            href={"https://forms.gle/8ErZ3G2VQZERawyX6"}
+                            target="_blank"
+                            className={
+                                `rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all border-white border-[1px] h-full`
+                            }
+                        >
+
+                            <p
+                                className={
+                                    "flex text-lg text-white font-UI font-bold"
+                                }
+                            >
+                                🚀 Kick-Off Form
+                            </p>
+
+                        </a>
+                        {/* <LearnMoreButton
+                            link={'/'}
+                            text={"Kick-Off Form"}
+                            startColor={"from-black-400"}
+                            endColor={"to-black-400"} /> */}
+
+                    </div>
                 </div>
-                <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-offset-4 ring-violet-400 ring-offset-black font-bold'>
+                {/* <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-offset-4 ring-violet-400 ring-offset-black font-bold'>
                     Kick-Off Form
-                </a>
+                </a> */}
             </div>
-            <div className={`fixed top-0 flex flex-col md:flex-row z-50 p-4 md:p-5 w-full ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : ""}`}>
-                <div className='flex justify-between flex-col md:flex-row items-center w-full'>
+            <div className={`fixed top-0 flex flex-col md:flex-row z-50 p-4 md:p-5 w-full transition-colors ${(!props.transparent || opened) ? "bg-zinc-50 bg-opacity-90 shadow-lg" : ""}`}>
+                <div className='flex justify-between flex-row items-center w-full'>
                     <div className='flex items-center'>
 
-                        <svg className={` ${(!props.transparent ? "hidden" : "")} mr-0 md:block md:ml-4 scale-50 md:scale-100`} xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
+                        <svg className={` mr-0 md:block md:ml-4 scale-50 md:scale-100`} xmlns="http://www.w3.org/2000/svg" width="42" height="58" viewBox="0 0 42 58" fill="none">
                             <g filter="url(#filter0_d_106_2)">
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} />
                                 <path d="M20.16 45.92L4.6 35.88V31.56L20.16 21.52V27.28L9.8 33.64V33.8L20.16 40.16V45.92Z" fill={(!props.transparent ? "#00A3FF" : "white")} fill-opacity="0.9" />
@@ -66,7 +86,7 @@ const NavbarTitle: React.FC<{
                                 </filter>
                             </defs>
                         </svg>
-                        <h1 className={` text-white font-Grotesk text-md ${(!props.transparent ? "hidden text-left" : "md:hidden")}`}>Hersey Developers</h1>
+                        <h1 className={`md:hidden font-Grotesk text-xl ${props.transparent ? "text-white" : "text-black"}`}>Hersey Developers</h1>
                         <div className={"md:hidden"}>
                             {/* {
                                 opened ? (
@@ -79,13 +99,13 @@ const NavbarTitle: React.FC<{
                         <a
                             href={"/"}
                             className={
-                                `hidden md:block ml-2 text-xl font-bold ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `hidden md:block ml-2 text-xl font-bold ${(props.transparent) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Hersey Developers
                         </a>
                     </div>
-                    <div className='flex'>
+                    <div className='hidden md:flex'>
                         <a
                             href={"/resources"}
                             className={
@@ -105,7 +125,7 @@ const NavbarTitle: React.FC<{
                         <a
                             href={"https://discord.gg/ZfdyycD4y4"}
                             className={
-                                `hidden md:block text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-100 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
+                                `hidden md:block text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-4 py-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-400 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
                             Join Today
