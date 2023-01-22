@@ -8,6 +8,14 @@ module.exports = {
         Grotesk: ["Space Grotesk", "sans-serif"],
         UI: ["Segoe UI, sans-serif"],
       },
+      backgroundImage: {
+        "codebackground": "url('/src/components/landing-page/assets/images/background.png')",
+      },
+      screens: {
+        mobile: {
+          max: "768px"
+        }
+      }
     },
   },
   plugins: [],

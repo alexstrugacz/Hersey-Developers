@@ -8,9 +8,10 @@ const ProjectCell: React.FC<{
     link: string;
     status: string;
 }> = (project) => {
+    //src={project.imagelink === "none" ? "" : project.imagelink} />
     return <a href={project.link}>
         <div className='bg-gradient-to-b from-neutral-500 to-neutral-800 rounded-2xl'>
-            <img className={"bg-gradient-to-r from-cyan-500 to-blue-500 object-cover rounded-2xl w-full h-64 opacity-50"} src={project.imagelink === "none" ? "./assets/images/placeholder.png" : project.imagelink} />
+            <div className={"bg-zinc-400 object-cover rounded-2xl w-full h-64 opacity-50"} />
             <div className={"p-2 py-5"}>
                 <p className={"font-Poppins text-zinc-200 text-left pl-4 font-medium text-xl"}>{project.name}</p>
                 <p className={"font-Poppins text-zinc-400 text-left pl-4 text-md mt-1"}>{project.description}</p>
