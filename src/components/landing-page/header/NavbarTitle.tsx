@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useState } from 'react';
 import DiscordButton from '../../global/DiscordButton';
 import LearnMoreButton from '../../global/LearnMoreButton';
@@ -7,7 +8,6 @@ import { useWindowDimensions } from "./getwindowsize";
 const NavbarTitle: React.FC<{
     transparent: boolean;
 }> = (props) => {
-
     const windowDimensions = useWindowDimensions();
     const [opened, setOpened] = useState(false);
 
@@ -19,14 +19,25 @@ const NavbarTitle: React.FC<{
         setOpened(false);
     }
 
-
     return (
         <div>
             <div className='flex flex-col justify-center items-center absolute z-40 top-0 w-full h-screen'>
                 <div className={"max-w-6xl p-10"}>
-                    <h1 className=' text-white text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></h1>
-                    <p className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-6 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</p>
-                    <div className='mt-8 text-left md:flex md:mt-16 gap-4'>
+
+                    <motion.h1
+                        initial={{ opacity: 0, x: -100, scale: 0.8 }}
+                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        transition={{ delay: 0.2, duration: 0.5 }} className=' text-white text-left font-Grotesk text-6xl font-extrabold mt-12'>Level up your <a className='text-cyan-300'>coding skills</a></motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, x: -50, scale: 0.8 }}
+                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        transition={{ delay: 0.8, duration: 0.5 }}
+                        className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-6 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</motion.p>
+                    <motion.div
+                        initial={{ opacity: 0, x: -100, scale: 0.8 }}
+                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        transition={{ delay: 1.3, duration: 0.5 }}
+                        className='mt-8 text-left flex flex-col md:flex-row md:mt-16 gap-4'>
                         <DiscordButton
                             link={'https://discord.gg/ZfdyycD4y4'}
                             text={"Join the Discord"}
@@ -56,7 +67,7 @@ const NavbarTitle: React.FC<{
                             startColor={"from-black-400"}
                             endColor={"to-black-400"} /> */}
 
-                    </div>
+                    </motion.div>
                 </div>
                 {/* <a href='https://forms.gle/8ErZ3G2VQZERawyX6' className='flex mt-6 bg-gradient-to-b from-purple-300 to-purple-700 rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all font-UI text-white ring-4 ring-offset-4 ring-violet-400 ring-offset-black font-bold'>
                     Kick-Off Form
