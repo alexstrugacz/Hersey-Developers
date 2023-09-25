@@ -1,6 +1,7 @@
 import React from "react";
 import BackgroundImage from "../assets/images/background.png"
 import DiscordButton from "../../global/DiscordButton";
+import ActionButton from "../../global/ActionButton";
 
 const Footer: React.FC<{}> = () => {
     return (
@@ -10,13 +11,14 @@ const Footer: React.FC<{}> = () => {
                 <div className={"w-full max-w-6xl"}>
                     <div className="flex flex-col gap-5 w-full p-10">
                         <h1 className="overflow-hidden text-white font-Grotesk text-4xl md:text-5xl font-bold text-left leading-tight md:leading-0">Join Hersey Developers Today!</h1>
-                        <p className="text-white font-Grotesk text-2xl  text-left max-w-4xl">Join the Discord server to meet Hersey Developers and gain key announcements!</p>
+                        <p className="text-zinc-300 font-Grotesk text-2xl  text-left max-w-4xl">Build software development skills and high impact projects at Hersey Developers! <a className={"text-white font-bold"}>2024 signups close 10/31, and space is limited.</a></p>
                         <br />
-                        <DiscordButton
-                            link={'https://discord.gg/ZfdyycD4y4'}
-                            text={"Join the Discord"}
-                            startColor={"from-cyan-400"}
-                            endColor={"to-cyan-800"} />
+                        <ActionButton
+                            link="https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"
+                            text="🚀 Sign Up Now"
+                            startColor="from-orange-400"
+                            endColor="to-red-800"
+                        />
                     </div>
                 </div>
             </div>

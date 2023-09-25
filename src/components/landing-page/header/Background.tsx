@@ -3,7 +3,7 @@ import backgroundImage from "../assets/images/background.png";
 
 const Background: React.FC<{}> = () => {
     return (
-        <div className={"relative bg-neutral-900 h-screen overflow-hidden"}>
+        <div className={"relative bg-neutral-900 h-[120vh] md:h-screen overflow-hidden"}>
             <img
                 src={backgroundImage}
                 alt='background of written code'

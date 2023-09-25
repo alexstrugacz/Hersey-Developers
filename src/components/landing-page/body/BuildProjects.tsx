@@ -11,7 +11,7 @@ const BuildProjects: React.FC<{}> = () => {
                 <img className="md:hidden w-full object-cover rounded-xl hover:scale-105 transition-all max-h-72 h-full shadow-xl" src={buildprojects}></img>
                 <div className={"md:w-1/2"}>
                     <h3 className="text-left md:text-left font-Grotesk font-bold text-4xl">Build <a className="text-teal-600">high-impact projects</a></h3>
-                    <p className="mt-2 font-UI text-left text-zinc-600 text-lg mb-5">The next part of the internship is building projects. Groups of 4-6, called “pods”, alongside a Hersey Developers Leader build projects requested by staff in D214 or local businesses.</p>
+                    <p className="mt-2 font-UI text-left text-zinc-600 text-lg mb-5">The next part of the internship is building projects. Hersey Developer teams alongside a Hersey Developers Leader build projects requested by staff in D214 or local businesses.</p>
                     <div className="flex mt-3">
                         <ProjectsButton
                             link={'/projects'}
