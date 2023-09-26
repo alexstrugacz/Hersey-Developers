@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from 'react';
+import ActionButton from "../../global/ActionButton";
 import DiscordButton from '../../global/DiscordButton';
 import LearnMoreButton from '../../global/LearnMoreButton';
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -21,9 +22,8 @@ const NavbarTitle: React.FC<{
 
     return (
         <div>
-            <div className='flex flex-col justify-center items-center absolute z-40 top-0 w-full h-screen'>
-                <div className={"max-w-6xl p-10"}>
-
+            <div className='flex flex-col justify-center items-center absolute z-40 top-0 w-full h-[120vh] md:h-screen'>
+                <div className={"max-w-6xl p-5 md:p-10"}>
                     <motion.h1
                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
                         animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -32,35 +32,31 @@ const NavbarTitle: React.FC<{
                         initial={{ opacity: 0, x: -50, scale: 0.8 }}
                         animate={{ opacity: 1, x: 0, scale: 1 }}
                         transition={{ delay: 0.8, duration: 0.5 }}
-                        className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-6 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects 🚀</motion.p>
+                        className='mr-12 md:mr-0 text-white font-Grotesk text-xl text-left md:w-3/5 mt-6 '>Hersey Developers is a remote internship where you’ll learn software development and build high-impact projects.</motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, x: -50, scale: 0.8 }}
+                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        transition={{ delay: 0.8, duration: 0.5 }}
+                        className='mr-12 md:mr-0 text-white font-Grotesk text-lg text-left md:w-3/5 mt-6 font-bold'>2024 signups are open! Signups close 10/31, and space is limited.</motion.p>
                     <motion.div
                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
-                        animate={{ opacity: 1, x: 0, scale: 1 }}
+                        animate={{ opacity: 1.2, x: 0, scale: 1 }}
                         transition={{ delay: 1.3, duration: 0.5 }}
                         className='mt-8 text-left flex flex-col md:flex-row md:mt-16 gap-4'>
+
+                        <ActionButton
+                            link="https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"
+                            text="🚀 Sign Up Now"
+                            startColor="from-orange-400"
+                            endColor="to-red-800"
+                        />
                         <DiscordButton
                             link={'https://discord.gg/ZfdyycD4y4'}
                             text={"Join the Discord"}
                             startColor={"from-cyan-400"}
                             endColor={"to-cyan-800"} />
 
-                        <a
-                            href={"https://forms.gle/8ErZ3G2VQZERawyX6"}
-                            target="_blank"
-                            className={
-                                `rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all border-white border-[1px] h-full`
-                            }
-                        >
 
-                            <p
-                                className={
-                                    "flex text-lg text-white font-UI font-bold"
-                                }
-                            >
-                                🚀 Kick-Off Form
-                            </p>
-
-                        </a>
                         {/* <LearnMoreButton
                             link={'/'}
                             text={"Kick-Off Form"}
@@ -134,12 +130,12 @@ const NavbarTitle: React.FC<{
                             Projects
                         </a>
                         <a
-                            href={"https://discord.gg/ZfdyycD4y4"}
+                            href={"https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"}
                             className={
                                 `hidden md:block text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-4 py-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-400 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
                             }
                         >
-                            Join Today
+                            Sign Up Today
                         </a>
                         <a
                             href={"https://discord.gg/ZfdyycD4y4"}

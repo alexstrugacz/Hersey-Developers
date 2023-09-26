@@ -35,7 +35,8 @@ const ResourcePage: React.FC<{}> = () => {
                 <BackButton link={"/"} />
             </div>
             <h1 className='flex text-white text-5xl font-Grotesk font-bold mt-[4vh]'>Resources</h1>
-            <br />
+            <p className='text-white mt-3'>Coming soon...</p>
+            {/* <br />
             <h2 className={"text-3xl font-Grotesk font-medium text-white mb-1"}>Guides</h2>
             <Resource
                 name={"Getting Started with Hersey Developers"}
@@ -53,7 +54,7 @@ const ResourcePage: React.FC<{}> = () => {
                         />
                     )
                 })}
-            </div>
+            </div> */}
 
 
         </div>
