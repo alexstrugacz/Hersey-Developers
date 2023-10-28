@@ -37,7 +37,7 @@ const NavbarTitle: React.FC<{
                         initial={{ opacity: 0, x: -50, scale: 0.8 }}
                         animate={{ opacity: 1, x: 0, scale: 1 }}
                         transition={{ delay: 0.8, duration: 0.5 }}
-                        className='mr-12 md:mr-0 text-white font-Grotesk text-lg text-left md:w-3/5 mt-6 font-bold'>2024 signups are open! Signups close 10/31, and space is limited.</motion.p>
+                        className='mr-12 md:mr-0 text-white font-Grotesk text-lg text-left md:w-3/5 mt-6 font-bold'>Hersey Developers 2024 is currently full. However, waitlist signups are due 10/31.</motion.p>
                     <motion.div
                         initial={{ opacity: 0, x: -100, scale: 0.8 }}
                         animate={{ opacity: 1.2, x: 0, scale: 1 }}
