@@ -6,19 +6,22 @@ const ActionButton: React.FC<{
     startColor: string;
     endColor: string;
     fullRedirect?: boolean;
+    disabled?: boolean;
 }> = (props) => {
 
     const navigate = useNavigate();
 
     const handleClick = () => {
-        window.open(props.link, "_blank");
+        if (!props.disabled) {
+            window.open(props.link, "_blank");
+        }
     }
 
     return (
         <button
             onClick={handleClick}
             className={
-                ` bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit hover:cursor-pointer hover:scale-105 transition-all`
+                ` bg-gradient-to-b ${props.startColor} ${props.endColor} rounded-lg p-3 px-5 w-fit ${props.disabled ? "hover:cursor-not-allowed" : "hover:cursor-pointer hover:scale-105 "} transition-all ${props.disabled ? "opacity-50" : ""}`
             }
         >
 
