@@ -41,10 +41,9 @@ const NavbarTitle: React.FC<{
 
                         <ActionButton
                             link="https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"
-                            text="Registration Closed"
+                            text="Sign Up Now"
                             startColor="from-orange-400"
                             endColor="to-red-800"
-                            disabled
                         />
                         <DiscordButton
                             link={'https://discord.gg/ZfdyycD4y4'}
