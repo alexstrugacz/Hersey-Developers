@@ -41,9 +41,10 @@ const NavbarTitle: React.FC<{
 
                         <ActionButton
                             link="https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"
-                            text="Sign Up Now"
+                            text="Sign Up Closed"
                             startColor="from-orange-400"
                             endColor="to-red-800"
+                            disabled
                         />
                         <DiscordButton
                             link={'https://discord.gg/ZfdyycD4y4'}
@@ -122,7 +123,7 @@ const NavbarTitle: React.FC<{
                         >
                             Projects
                         </a>
-                        <a
+                        {/* <a
                             href={"https://herseyhacks.notion.site/Hersey-Developers-2024-c02096923c294568bed55c63cd518adc?pvs=4"}
                             className={
                                 `hidden md:block text-white ml-2 mr-3 md:mr-16 text-xl font-bold font-Grotesk rounded-xl p-4 py-2 hover:font-extrabold border-solid border-4 border-blue-400 transition-all hover:bg-blue-400 hover:text-black ${(props.transparent && !opened) ? "text-white" : "text-black"} hover:font-bold transition-all`
@@ -137,7 +138,7 @@ const NavbarTitle: React.FC<{
                             }
                         >
                             Join
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
