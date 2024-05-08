@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 767px) { 
+  .display {
+    width: 100%;
+  }
+
+  .change {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px
+  }
+
+  .hide {
+    display: none
+  }
+}
+
+ 
+
+.padding {
+  padding: 10%
+}
+  
+  
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.font {
+  font-size: 40px;
+}
+
+@media (min-width: 1000px) {
+  .font {
+    font-size: 3.5rem;
+  }
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.about h2.logo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+ 
