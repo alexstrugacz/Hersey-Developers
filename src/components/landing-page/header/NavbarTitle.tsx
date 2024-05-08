@@ -51,6 +51,12 @@ const NavbarTitle: React.FC<{
                             text={"Join the Discord"}
                             startColor={"from-cyan-400"}
                             endColor={"to-cyan-800"} />
+                        <ActionButton
+                            link="/d214"
+                            text="D214 Developers"
+                            startColor="from-red-400"
+                            endColor="to-red-600" 
+                        />
                         {/* <LearnMoreButton
                             link={'/'}
                             text={"Kick-Off Form"}
