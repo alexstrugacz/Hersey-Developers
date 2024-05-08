@@ -1,5 +1,7 @@
  import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import DiscordButton from '../../components/global/DiscordButton';
+import ActionButton from '../../components/global/ActionButton';
 
 const Join = () => {
   const { ref, inView } = useInView({
@@ -18,8 +20,18 @@ const Join = () => {
         <h1 className='font-bold' style={{ fontSize: "min(9vw, 50px)", lineHeight: "1.2" }}>Want to join D214 <span style={{ color: "#c00c2c" }}>Developers</span>?</h1>
         <h2 style={{ fontSize: "min(4vw, 20px)" }}>Here is our signup form for D214 Developers.</h2>
         <div className='flex gap-2 pt-4 flex-wrap'>
-          <button className='bg-white text-black font-bold px-6 py-2 rounded-xl cursor-not-allowed'>Sign Up (Opens soon)</button>
-          <button className='bg-slate-500 text-white font-bold px-6 py-2 rounded-xl cursor-not-allowed'>Join the Discord (Opens soon)</button>
+          <ActionButton
+            link="/"
+            text="Sign Up Closed"
+            startColor="from-red-400"
+            endColor="to-red-800"
+            disabled
+          />
+          <DiscordButton
+            link={'https://discord.gg/ZfdyycD4y4'}
+            text={"Join the Discord"}
+            startColor={"from-cyan-400"}
+            endColor={"to-cyan-800"} />
         </div>
       </motion.div>
     </div>

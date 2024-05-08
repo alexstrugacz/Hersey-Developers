@@ -1,6 +1,3 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer';
 
 interface AboutInterface {
     catchPhrase: string;
@@ -34,10 +31,6 @@ const AboutComponentObject = [
 ]
 
 const AboutComponent = () => {
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-        threshold: 0,
-    });
     return (
         <>
             {AboutComponentObject.map(data => (
@@ -45,11 +38,7 @@ const AboutComponent = () => {
                     {data._id != 1 && (
                         <div className='w-4/5 m-10 ml-10 mr-10 hide' style={{ border: "1px solid lightgray" }}></div>
                     )}
-                    <motion.div
-                        ref={ref}
-                        initial={{ scale: 0.5 }}
-                        animate={{ scale: inView ? 1 : 0.5 }}
-                        transition={{ duration: 1, ease: "easeInOut" }}
+                    <div
                         className={`pt-5 pb-5 md:pb-0 md:pt-0 lg:pb-0 lg:pt-0 w-4/5 flex flex-col items-center text-center ${data._id % 2 === 0 ? 'md:items-end lg:items-end'
                             : 'md:items-start lg:items-start'} justify-center`}>
                         <h1 className='text-3xl font-bold' style={{ color: "#c00c2c" }}>{data.catchPhrase}</h1>
@@ -72,7 +61,7 @@ const AboutComponent = () => {
                                 </>
                             )}
                         </div>
-                    </motion.div>
+                    </div>
                 </>
             ))}
 
